@@ -1,6 +1,6 @@
 /* 
  * compile line 
- * gcc -o cor cor.c -lgsl -lgslcblas -lm
+ * gcc -o ESQ ES_Quantiles.c -lgsl -lgslcblas -lm
  * 
  * David Bookstaber 3/18/2014
  *
@@ -33,7 +33,7 @@ int main (void){
 	T = gsl_rng_default;
 	rng = gsl_rng_alloc(T);
 
-	long i, j, k, n = ITERATIONS;
+	long h, i, j, k, n = ITERATIONS;
 
 	unsigned group; // Group size to simulate -- iterates [2 to SHOTS]
 	unsigned groups; // Number of groups to average: iterates for all groups [1 to SHOTS/2] where groups * group = SHOTS
@@ -42,9 +42,8 @@ int main (void){
 	double *x, *y;
 	// Variables with one value per group
 	double *extremeSpread;
-	// Variables for averaging over all samples in a group size
-	double x_min, x_max, y_min, y_max, radius, ES;
-	unsigned left, right, top, bottom; // Index of extreme shots in each group
+	// Variable for finding ExtremeSpread of group
+	double spread, maxSpread;
 
 	extremeSpread = (double *) malloc(ITERATIONS*sizeof(double));
 
@@ -73,42 +72,14 @@ int main (void){
 
 				shoot(group, rng, 0, 0, sigma, sigma, 0, x, y);
 
-				// Compute group center and range
-				left = right = top = bottom = 0;
-				x_min = x_max = x[0];
-				y_min = y_max = y[0];
+				maxSpread = 0;
 				for (i = 0; i < group; i++){
-					if(x[i] < x_min){
-						x_min = x[i];
-						left = i;
-					}
-					if(x[i] > x_max){
-						x_max = x[i];
-						right = i;
-					}
-
-					if(y[i] < y_min){
-						y_min = y[i];
-						bottom = i;
-					}
-					if(y[i] > y_max){
-						y_max = y[i];
-						top = i;
+					for(h = i+1;h < group;h++){
+						spread = SQR(x[i] - x[h]) + SQR(y[i] - y[h]);
+						if(spread > maxSpread) maxSpread = spread;
 					}
 				}
-				// Compute extreme spread by checking distance between the four extreme shots
-				ES = SQR(x[top] - x[bottom]) + SQR(y[top] - y[bottom]);
-				radius = SQR(x[left] - x[right]) + SQR(y[left] - y[right]);
-				if(radius > ES) ES = radius;
-				radius = SQR(x[top] - x[right]) + SQR(y[top] - y[right]);
-				if(radius > ES) ES = radius;
-				radius = SQR(x[left] - x[top]) + SQR(y[left] - y[top]);
-				if(radius > ES) ES = radius;
-				radius = SQR(x[left] - x[bottom]) + SQR(y[left] - y[bottom]);
-				if(radius > ES) ES = radius;
-				radius = SQR(x[bottom] - x[right]) + SQR(y[bottom] - y[right]);
-				if(radius > ES) ES = radius;
-				extremeSpread[j] += sqrt(ES);
+				extremeSpread[j] += sqrt(maxSpread);
 			}
 			extremeSpread[j] /= groups;
 		}
