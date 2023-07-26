@@ -1,6 +1,6 @@
 /* 
 compile line 
-gcc -o cor cor.c -lgsl -lgslcblas -lm
+gcc -o SymmetricBivariate SymmetricBivariate.c -lgsl -lgslcblas -lm
 
 Based on simulation from Charles McMillan 10/25/2013
 Modified by David Bookstaber 11/17/2013
@@ -30,6 +30,7 @@ Modified by David Bookstaber 11/17/2013
 #include <gsl/gsl_sort.h>
 #include <gsl/gsl_statistics_double.h>
 #include <gsl/gsl_sf_gamma.h>
+#include <sys/time.h>
 
 #define ITERATIONS 1000000
 #define PI 3.14159265358979
@@ -39,17 +40,18 @@ Modified by David Bookstaber 11/17/2013
 #define SQR(x) ((x)*(x))
 
 double c4 (long n);
-int shoot (long n, gsl_rng *r, double x0, double y0, double sigma1, double sigma2, double rho, double *x, double *y);
+int shoot (long n, gsl_rng *r, double sigma1, double sigma2, double rho, double *x, double *y);
 
-int main (void){
+int main (void) {
 	/* Initialize GSL random number generator */
 	const gsl_rng_type *T;
 	gsl_rng *rng;
 	gsl_rng_env_setup();
 	T = gsl_rng_default;
 	rng = gsl_rng_alloc(T);
+	//gsl_rng_set(rng, random_seed());  // Random seed
 
-	long i, j, n = ITERATIONS;
+	long h, i, j, n = ITERATIONS;
 	unsigned group; // Group size to simulate -- iterates [2 to MAX_N]
 	double sigma = SIGMA;
 	double cBessel, cRayleigh, c4_n, c4_2n1;
@@ -67,7 +69,7 @@ int main (void){
 	double *sigmaX_bar, *sigmaY_bar, *sigma_bar; // Sample sigmas of X and Y (biased)
 	double *diagonal, *FoM, *extremeSpread;
 	// Variables for averaging over all samples in a group size
-	double x_min, x_max, x_bar, x_range, y_min, y_max, y_bar, y_range, radius;
+	double x_min, x_max, x_bar, x_range, y_min, y_max, y_bar, y_range, radius, ES, spread;
 	unsigned left, right, top, bottom; // Index of extreme shots in each group
 
 	centerDistance = (double *) malloc(ITERATIONS*sizeof(double));
@@ -138,9 +140,10 @@ int main (void){
 		// Run N iterations of group shots
 		for (j = 0; j < n; j++){
 			// For each iteration:
-			shoot(group, rng, 0, 0, sigma, sigma, 0, x, y);
+			shoot(group, rng, sigma, sigma, 0, x, y);
 
 			// Compute group center and range
+			ES = 0;
 			left = right = top = bottom = 0;
 			x_bar = y_bar = 0;
 			x_min = x_max = x[0];
@@ -165,6 +168,13 @@ int main (void){
 					top = i;
 				}
 				y_bar += y[i];
+
+				// Brute-force extreme spread
+				// (Want to make it faster? Find convex hull, then Shamos's Rotating Calipers algorithm.  E.g., https://code.activestate.com/recipes/117225/)
+				for(h = i+1; h < group; h++) {
+					spread = SQR(x[h] - x[i]) + SQR(y[h] - y[i]);
+					if(spread > ES) ES = spread;
+				}
 			}
 			x_bar /= (double)group;
 			y_bar /= (double)group;
@@ -173,19 +183,7 @@ int main (void){
 			centerDistance[j] = sqrt(SQR(x_bar) + SQR(y_bar));
 			diagonal[j] = sqrt(SQR(x_range) + SQR(y_range));
 			FoM[j] = (x_range + y_range) / 2.0;
-			// Compute extreme spread by checking distance between the four extreme shots
-			extremeSpread[j] = SQR(x[top] - x[bottom]) + SQR(y[top] - y[bottom]);
-			radius = SQR(x[left] - x[right]) + SQR(y[left] - y[right]);
-			if(radius > extremeSpread[j]) extremeSpread[j] = radius;
-			radius = SQR(x[top] - x[right]) + SQR(y[top] - y[right]);
-			if(radius > extremeSpread[j]) extremeSpread[j] = radius;
-			radius = SQR(x[left] - x[top]) + SQR(y[left] - y[top]);
-			if(radius > extremeSpread[j]) extremeSpread[j] = radius;
-			radius = SQR(x[left] - x[bottom]) + SQR(y[left] - y[bottom]);
-			if(radius > extremeSpread[j]) extremeSpread[j] = radius;
-			radius = SQR(x[bottom] - x[right]) + SQR(y[bottom] - y[right]);
-			if(radius > extremeSpread[j]) extremeSpread[j] = radius;
-			extremeSpread[j] = sqrt(extremeSpread[j]);
+			extremeSpread[j] = sqrt(ES);
 
 			// Compute variances, radii and estimators
 			varX_bar[j] = varY_bar[j] = 0;
@@ -283,19 +281,20 @@ double c4(long n){
 * Generate a set of shots 
 * n - number of shots to fire
 * r - pointer to random number generator
-* (x0, y0) - aim point doesn't have to be zero
 * (sigma1, sigma2) - Standard deviations in the x and y directions
 * rho - covariance
 * (*x, *y) - the array containing the shots - have to allocated externally
 ***************************** */
-int shoot (long n, gsl_rng *r, double x0, double y0, double sigma1, double sigma2, double rho, double *x, double *y){
+int shoot (long n, gsl_rng *r, double sigma1, double sigma2, double rho, double *x, double *y){
 	long i;
 	for (i = 0; i < n; i++){
 		gsl_ran_bivariate_gaussian (r, sigma1, sigma2, rho, &x[i], &y[i]);
-//		x[i] += x0;
-//		y[i] += y0; // Caution: this value seems to get changed after first call -- probable memory leak somewhere!
 	}
 	return 0;
 }
 
-/* ******************************* */      
+unsigned long int random_seed() {
+	struct timeval tv;
+	gettimeofday(&tv,0);
+	return (tv.tv_sec + tv.tv_usec);
+}
