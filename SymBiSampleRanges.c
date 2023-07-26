@@ -43,7 +43,6 @@ int main (void) {
 	double *diagonal, *FoM, *extremeSpread;
 	// Variables for averaging over all samples in a group size
 	double x_min, x_max, x_bar, x_range, y_min, y_max, y_bar, y_range, radius, spread, ES;
-	unsigned left, right, top, bottom; // Index of extreme shots in each group
 
 	diagonal = (double *) malloc(ITERATIONS*sizeof(double));
 	FoM = (double *) malloc(ITERATIONS*sizeof(double));
@@ -101,29 +100,20 @@ int main (void) {
 
 			// Compute group center and range
 			ES = 0;
-			left = right = top = bottom = 0;
 			x_bar = y_bar = 0;
 			x_min = x_max = x[0];
 			y_min = y_max = y[0];
-			for (i = 0; i < group; i++){
-				if(x[i] < x_min){
+			for (i = 0; i < group; i++) {
+				if(x[i] < x_min)
 					x_min = x[i];
-					left = i;
-				}
-				if(x[i] > x_max){
+				if(x[i] > x_max)
 					x_max = x[i];
-					right = i;
-				}
 				x_bar += x[i];
 
-				if(y[i] < y_min){
+				if(y[i] < y_min)
 					y_min = y[i];
-					bottom = i;
-				}
-				if(y[i] > y_max){
+				if(y[i] > y_max)
 					y_max = y[i];
-					top = i;
-				}
 				y_bar += y[i];
 
 				// Brute-force extreme spread.
