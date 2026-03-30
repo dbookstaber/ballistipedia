@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Home - ShotStat</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Home","wgTitle":"Home","wgCurRevisionId":1550,"wgRevisionId":1550,"wgArticleId":1,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Home","wgRelevantArticleId":1,"wgRequestId":"acrxsRdmgC6IACaKnFxy8AAAABY","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Main_Page","wgWikiEditorEnabledModules":[],"wgMjSize":100,"wgInternalRedirectTargetUrl":"/index.php?title=Home"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@1mwr7fi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["ext.MjCDN","ext.MjCDN.mobile","mediawiki.action.view.redirect","ext.cite.a11y","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.31.6"/>
+<link rel="shortcut icon" href="ShotStatWiki.png"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="ShotStat (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://ballistipedia.com/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="ShotStat Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="http://ballistipedia.com/index.php?title=Home"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Home rootpage-Home skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Home</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From ShotStat</div>				<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="/index.php?title=Main_Page&amp;redirect=no" class="mw-redirect" title="Main Page">Main Page</a>)</span></div>
+								<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>This site explains and demonstrates statistics for analyzing the precision of projectile weapon systems.<sup id="cite_ref-nuance_1-0" class="reference"><a href="#cite_note-nuance-1">&#91;1&#93;</a></sup>
+</p><p>High level topics, which are good places to start exploring the site, include:
+</p>
+<ul><li><a href="/index.php?title=What_is_Precision%3F" title="What is Precision?">What is Precision?</a>: An important explanation of the difference between precision and accuracy as the terms are used in statistics</li>
+<li><a href="/index.php?title=Why_BPC" title="Why BPC">Why BPC</a>: How people go wrong evaluating precision</li>
+<li><a href="/index.php?title=Describing_Precision" title="Describing Precision">Describing Precision</a>: Units, terms, and relationships</li>
+<li><a href="/index.php?title=Precision_Models" title="Precision Models">Precision Models</a>: Statistical approaches for efficient estimation and inference of precision</li>
+<li><a href="/index.php?title=Prior_Art" title="Prior Art">Prior Art</a>: Reviews of past efforts to address this question</li>
+<li><a href="/index.php?title=FAQ" title="FAQ">FAQ</a></li>
+<li><a href="/index.php?title=Ballistic_Precision_Classification" title="Ballistic Precision Classification">Ballistic Precision Classification</a>: A proposed industry standard for determining and describing precision</li></ul>
+<h1><span class="mw-headline" id="Synopsis">Synopsis</span></h1>
+<p>When testing a gun, shooter, and/or ammunition the most popular measure is <a href="/index.php?title=Range_Statistics#Extreme_Spread" title="Range Statistics">Extreme Spread</a> or "group size" of a sample of target shots.  However Extreme Spread must be used with care since it is frequently and easily abused.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> As with all measures, the single best measurement is meaningless in isolation. The proper statistical estimator is an "average" (a.k.a., <i>expected value</i>) of the measurement.
+</p><p>Another consideration is that some measures, such as Extreme Spread, change value when there are more shots in a group.  Measures that have such a dependency will be referred to here as <i>variant measures</i>.  There are <i><a href="/index.php?title=Describing_Precision#Invariant_Measures" title="Describing Precision">invariant measures</a></i>, like <a href="/index.php?title=Circular_Error_Probable" title="Circular Error Probable">Circular Error Probable</a> or Mean Radius, for which the expected values do not change with the number of shots in a group. Instead <a href="/index.php?title=Precision_Models#How_large_a_sample_do_we_need.3F" title="Precision Models">having more shots only increases the confidence in the measure's value</a>. Of course the experimental error of either type of measurement can also be decreased by increasing the sample size (i.e., shooting more groups). 
+</p><p>Furthermore, by first making assumptions about the inherent shot dispersion, then it is possible to use theoretical models to estimate measurements and their precision.  The distributions are of two basic types:  If the expected values and the expected precision factor for the measurements depend on distributions which have an <a href="/index.php?title=Closed_Form_Precision" title="Closed Form Precision">explicit solution</a> then the values can be calculated formulaically.  If the values don't have a distribution with a closed form expression then they can be estimated via Monte Carlo approaches.
+</p><p><a href="/index.php?title=Category:Examples" title="Category:Examples">Examples</a> of the application of these <a href="/index.php?title=Precision_Models" title="Precision Models">methods</a> and <a href="/index.php?title=Measuring_Tools" title="Measuring Tools">tools</a> include:
+</p>
+<ul><li>Determining how many sighter shots you should take.</li>
+<li>Determining the likelihood of a hit on a particular target by a zeroed shooting system.</li>
+<li>Comparing the inherent precision of different shooting systems.</li>
+<li>Determining which ammunition shoots better in a particular gun.</li></ul>
+<hr />
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-nuance-1"><span class="mw-cite-backlink"><a href="#cite_ref-nuance_1-0">↑</a></span> <span class="reference-text"><small>Typical examples would be target shooting with a rifle or pistol. Such weapons as shotguns, mortars, and ballistic missiles would have some similar characteristics, but also have factors that are neglected in the discussions and measurements.  The wiki will discuss some factors of ballistics, but it is not intended to address all the nuances of internal, external, or terminal ballistics. Rather, the focus is primarily on the analysis of the precision of the whole weapon system which can be observed directly by the relative impact points on a target. Some effort will be made to explore the precision of weapons subsystems.</small></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><small>Many <a href="/index.php?title=References" title="References">references</a> are worth reading for further background on how Extreme Spread is broadly misunderstood. Recommended include <a rel="nofollow" class="external text" href="https://www.thetruthaboutguns.com/understanding-rifle-precision/">Understanding Rifle Precision</a>, <a rel="nofollow" class="external text" href="https://www.autotrickler.com/blog/thinking-statistically">Thinking Statistically</a>, and <a rel="nofollow" class="external text" href="http://www.bisonops.com/2019/08/17/rifle-ammunition-load-workup/">Rifle Ammunition Load Workup</a>.</small></span>
+</li>
+</ol></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20260330215706
+Cache expiry: 0
+Dynamic content: true
+CPU time usage: 0.020 seconds
+Real time usage: 0.024 seconds
+Preprocessor visited node count: 29/1000000
+Preprocessor generated node count: 90/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1747/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://ballistipedia.com/index.php?title=Home&amp;oldid=1550">http://ballistipedia.com/index.php?title=Home&amp;oldid=1550</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Home" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/index.php?title=Home" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk"><span><a href="/index.php?title=Talk:Home" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/index.php?title=Home">Read</a></span></li><li id="ca-viewsource" class="collapsible"><span><a href="/index.php?title=Home&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li><li id="ca-history" class="collapsible"><span><a href="/index.php?title=Home&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search ShotStat" title="Search ShotStat [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/index.php?title=Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Home"><a href="/index.php?title=Main_Page">Home</a></li><li id="n-Glossary"><a href="/index.php?title=Glossary">Glossary</a></li><li id="n-FAQ"><a href="/index.php?title=FAQ">FAQ</a></li><li id="n-Site-Map"><a href="/index.php?title=Site_Map">Site Map</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Precision" aria-labelledby="p-Precision-label">
+			<h3 id="p-Precision-label">Precision</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Introduction"><a href="/index.php?title=What_is_Precision%3F">Introduction</a></li><li id="n-Describing"><a href="/index.php?title=Describing_Precision">Describing</a></li><li id="n-Models"><a href="/index.php?title=Precision_Models">Models</a></li><li id="n-References"><a href="/index.php?title=References">References</a></li><li id="n-Examples"><a href="/index.php?title=Category:Examples">Examples</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wiki" aria-labelledby="p-wiki-label">
+			<h3 id="p-wiki-label">wiki</h3>
+			<div class="body">
+								<ul>
+					<li id="n-about"><a href="/index.php?title=ShotStat:About">About</a></li><li id="n-recentchanges"><a href="/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/index.php?title=Special:WhatLinksHere/Home" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/index.php?title=Special:RecentChangesLinked/Home" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Home&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Home&amp;oldid=1550" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Home&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 4 June 2024, at 17:46.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="/index.php?title=ShotStat:Privacy_policy" title="ShotStat:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/index.php?title=ShotStat:About" title="ShotStat:About">About ShotStat</a></li>
+								<li id="footer-places-disclaimer"><a href="/index.php?title=ShotStat:General_disclaimer" title="ShotStat:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.024","ppvisitednodes":{"value":29,"limit":1000000},"ppgeneratednodes":{"value":90,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1747,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20260330215706","ttl":0,"transientcontent":true}}});});</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46146668-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":256});});</script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+site_name: Ballistipedia
+site_url: https://dbookstaber.github.io/ballistipedia/
+site_description: Statistics for analyzing the precision of projectile weapon systems
+site_author: David Bookstaber
+repo_url: https://github.com/dbookstaber/ballistipedia
+repo_name: dbookstaber/ballistipedia
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.mark
+  - admonition
+  - pymdownx.details
+  - attr_list
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Introduction:
+    - What is Precision?: what-is-precision.md
+    - FAQ: faq.md
+    - Glossary: glossary.md
+  - Describing Precision:
+    - Overview: describing-precision.md
+    - Angular Size: angular-size.md
+  - Precision Models:
+    - Overview: precision-models.md
+    - Closed Form Precision: closed-form-precision.md
+    - Circular Error Probable: circular-error-probable.md
+    - Elliptic Error Probable: elliptic-error-probable.md
+    - Range Statistics: range-statistics.md
+    - Extreme Spread: extreme-spread.md
+    - Order Statistics: order-statistics.md
+  - Measurement:
+    - Measuring Precision: measuring-precision.md
+    - Measuring Tools: measuring-tools.md
+    - Ragged Holes: ragged-holes.md
+    - Fliers: fliers.md
+    - Fliers vs. Outliers: fliers-vs.-outliers.md
+    - Excluding Worst: excluding-worst.md
+  - Theory:
+    - Dispersion Assumptions: dispersion-assumptions.md
+    - Modeling Dispersion: modeling-dispersion.md
+    - Rayleigh Sigma Estimate: rayleigh-sigma-estimate.md
+    - Sighter Distribution: sighter-distribution.md
+    - Data Transformations: data-transformations-to-rayleigh-distribution.md
+    - Derivation of Rayleigh Distribution: derivation-of-the-rayleigh-distribution-equation.md
+    - Error Propagation: error-propagation.md
+    - Statistical Inference: statistical-inference.md
+    - Stringing: stringing.md
+    - What is ρ?: what-is-rho-in-the-bivariate-normal-distribution.md
+    - Covering Circle vs Extreme Spread: covering-circle-radius-versus-extreme-spread.md
+  - Classification:
+    - Ballistic Precision Classification: ballistic-precision-classification.md
+    - Dispersion Classifications: dispersion-classifications.md
+    - Projectile Dispersion Classifications: projectile-dispersion-classifications.md
+    - Why BPC: why-bpc.md
+    - Sighting a Weapon: sighting-a-weapon.md
+  - Examples:
+    - 22LR CCI 40gr HV 40-shot: 22lr-cci-40gr-hv-40-shot-100-yard-example.md
+    - 300BLK Subsonic 20-shot: 300blk-subsonic-20-shot-100-yard-example.md
+    - 300BLK Subsonic 60-shot: 300blk-subsonic-60-shot-100-yard-example.md
+    - 300BLK Test: 300blk-test.md
+    - Sight Zeroing Example: sight-zeroing-example.md
+    - Predicting Precision: closed-form-precision.md
+  - References:
+    - References: references.md
+    - Prior Art: prior-art.md
+    - CEP Literature: cep-literature.md
+    - Herb References: herb-references.md
+    - Leslie 1993: leslie-1993.md
+  - Site Map: site-map.md

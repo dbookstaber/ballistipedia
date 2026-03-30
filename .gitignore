@@ -1,0 +1,4 @@
+site/
+convert_output.txt
+__pycache__/
+*.pyc
