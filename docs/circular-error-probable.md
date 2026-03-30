@@ -5,9 +5,10 @@ The Circular Error Probable $CEP(p)$ for $p \in [0,1)$ is the estimated radius o
 How $CEP(p)$ should be estimated depends on what assumptions are made regarding the distribution of radial errors, i.e., the distribution of miss distances of shots to the point of aim (POA). In turn, the distribution of radial error depends on the bivariate distribution of ***x***- and ***y***-coordinates of the shots. If the ***x***- and ***y***-coordinates of the shots follow a bivariate normal distribution, the radial error around the POA can follow one of several distributions, depending on the cirumstances (Beckmann [1962](cep-literature.md#beckmann1962); [1964](cep-literature.md#beckmann1964)):
 
 
-![Distribution of radial error (red arrow) in different kinds of bivariate normal distribution. POA = point of aim, POI = mean point of impact](images/radialErrorDistributions.jpg)
-{ .figure-caption }
-*Distribution of radial error (red arrow) in different kinds of bivariate normal distribution. POA = point of aim, POI = mean point of impact*
+<figure class="figure-right" style="max-width: 400px" markdown="span">
+  ![Distribution of radial error (red arrow) in different kinds of bivariate normal distribution. POA = point of aim, POI = mean point of impact](images/radialErrorDistributions.jpg)
+  <figcaption markdown="span">Distribution of radial error (red arrow) in different kinds of bivariate normal distribution. POA = point of aim, POI = mean point of impact</figcaption>
+</figure>
 
 
 1. **Rayleigh**: When the true center of the coordinates and the POA coincide, the radial error around the POA in a bivariate uncorrelated normal random variable with equal variances follows a [Rayleigh distribution](http://reference.wolfram.com/language/ref/RayleighDistribution.html). This distribution is described in the [Closed Form Precision](closed-form-precision.md) section. In three dimensions (spherical error probable, SEP), the radial error follows a [Maxwell-Boltzmann distribution](http://reference.wolfram.com/language/ref/MaxwellDistribution.html).

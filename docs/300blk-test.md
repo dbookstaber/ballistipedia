@@ -239,14 +239,16 @@ One other observation concerns barrels: The 12” 4140 barrel had a leade that w
 
 ## hBN plating
 
-![Micrograph of the beginning of rifled groove engraved on a .30" copper-jacketed bullet.](images/UncoatedFired.jpg)
-{ .figure-caption }
-*Micrograph of the beginning of rifled groove engraved on a .30" copper-jacketed bullet.*
+<figure class="figure-left" style="max-width: 320px" markdown="span">
+  ![Micrograph of the beginning of rifled groove engraved on a .30" copper-jacketed bullet.](images/UncoatedFired.jpg)
+  <figcaption markdown="span">Micrograph of the beginning of rifled groove engraved on a .30" copper-jacketed bullet.</figcaption>
+</figure>
  
 
-![Micrograph of rifled engraving on a .30" copper-jacketed bullet that was impact-plated with hBN (which appears in black).](images/HBNfired.jpg)
-{ .figure-caption }
-*Micrograph of rifled engraving on a .30" copper-jacketed bullet that was impact-plated with hBN (which appears in black).*
+<figure class="figure-right" style="max-width: 320px" markdown="span">
+  ![Micrograph of rifled engraving on a .30" copper-jacketed bullet that was impact-plated with hBN (which appears in black).](images/HBNfired.jpg)
+  <figcaption markdown="span">Micrograph of rifled engraving on a .30" copper-jacketed bullet that was impact-plated with hBN (which appears in black).</figcaption>
+</figure>
 
 Testing the impact-plated bullets in both stainless and 4140 barrels, coated or uncoated, shows the bullet coating actually *adversely impacts performance*: **muzzle velocity is slightly higher, velocity dispersion is the same, and accuracy on target is reduced**!  Electron micrographs of a plated bullet show that absolutely no hBN is left in the bullet grooves, suggesting it is scraped away by the rifling during engraving.  Which means that all the impact plating process is doing is dinging up the bullets on a microscopic level and leaving (as the imaging technician described it) puddles of hBN in the resulting jacket scars.
 

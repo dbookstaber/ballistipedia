@@ -1,8 +1,9 @@
 # Symmetric Bivariate Normal Shots Imply Rayleigh Distributed Distances
 
-![Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.](images/Bivariate.png)
-{ .figure-caption }
-*Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.*
+<figure class="figure-right" style="max-width: 400px" markdown="span">
+  ![Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.](images/Bivariate.png)
+  <figcaption markdown="span">Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.</figcaption>
+</figure>
 
 After factoring out the known sources of asymmetry in the bivariate normal model we might conclude that shot groups are sufficiently symmetric that we can assume $\sigma_x = \sigma_y$.  In the case of the symmetric bivariate normal distribution, the distance of each shot from the center of impact (COI) follows the Rayleigh distribution with parameter *σ*.[^1]
 
@@ -104,7 +105,9 @@ Note that for large *n* the median of this $\chi^2$ distribution is very close t
 
 ### How large a sample do we need?
 
-![ConfidenceIntervals.png](images/ConfidenceIntervals.png)
+<figure class="figure-right" style="max-width: 450px" markdown="span">
+  ![ConfidenceIntervals.png](images/ConfidenceIntervals.png)
+</figure>
 
 Confidence intervals are a function of both the sample size and the sample sigma.  The adjacent chart shows the 95% confidence intervals in terms of the estimated σ so we can see how the interval tightens as sample size increases.
 
@@ -114,9 +117,10 @@ With a sample of 10 shots our 95% confidence interval is 77% as large as the par
 
 ### The 3-shot Group
 
-![Sample 3-shot group with 1/2" extreme spread. Sample center is in red. Each shot has *r* = .29".](images/3ShotSample.png)
-{ .figure-caption }
-*Sample 3-shot group with 1/2" extreme spread. Sample center is in red. Each shot has *r* = .29".*
+<figure class="figure-right" style="max-width: 210px" markdown="span">
+  ![Sample 3-shot group with 1/2" extreme spread. Sample center is in red. Each shot has *r* = .29".](images/3ShotSample.png)
+  <figcaption markdown="span">Sample 3-shot group with 1/2" extreme spread. Sample center is in red. Each shot has *r* = .29".</figcaption>
+</figure>
 
 A rifle builder sends you a [3-shot group](faq.md#how-meaningful-is-a-3-shot-precision-guarantee) measuring ½" between each of three centers to prove how accurate your rifle is.  *What does that really say about the gun's accuracy?*
 In the *best* case — i.e.:
@@ -139,9 +143,10 @@ so with 90% confidence we can only say that the gun's true precision *σ* is som
 
 # Using *σ*
 
-![Rayleigh distribution of shots given *σ*](images/RayleighProcess.png)
-{ .figure-caption }
-*Rayleigh distribution of shots given *σ**
+<figure class="figure-right" style="max-width: 250px" markdown="span">
+  ![Rayleigh distribution of shots given *σ*](images/RayleighProcess.png)
+  <figcaption markdown="span">Rayleigh distribution of shots given *σ*</figcaption>
+</figure>
 
 The *σ* we have carefully sampled and estimated is the parameter for the Rayleigh distribution with probability density function $\frac{x}{\sigma^2}e^{-x^2/2\sigma^2}$.  The associated Cumulative Distribution Function gives us the probability that a shot falls within a given radius of the center:
 
@@ -201,9 +206,10 @@ XM193 ammunition specifications require 10-round groups to fall under 2MOA.  Thi
 
 ## How many sighter shots do you need?
 
-![99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.](images/3ShotSighterError.png)
-{ .figure-caption }
-*99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.*
+<figure class="figure-right" style="max-width: 265px" markdown="span">
+  ![99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.](images/3ShotSighterError.png)
+  <figcaption markdown="span">99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.</figcaption>
+</figure>
 
 How many shots do you need to zero your scope?  As detailed in [Sighter Distribution](sighter-distribution.md) we know that the distance from the true center of a "sighting group" of *n* shots has a Rayleigh distribution with parameter $\sigma / \sqrt{n}$.
 

@@ -1,9 +1,10 @@
 # Conversion between absolute and angular size units
 
 
-![Angle $\varphi$ (degree) with corresponding arc length $x$ (radian) in the unit circle.](images/AnglesCircle.jpg)
-{ .figure-caption }
-*Angle $\varphi$ (degree) with corresponding arc length $x$ (radian) in the unit circle.*
+<figure class="figure-right" style="max-width: 236px" markdown="span">
+  ![Angle $\varphi$ (degree) with corresponding arc length $x$ (radian) in the unit circle.](images/AnglesCircle.jpg)
+  <figcaption markdown="span">Angle $\varphi$ (degree) with corresponding arc length $x$ (radian) in the unit circle.</figcaption>
+</figure>
 
 
 As mentioned in [Describing Precision](describing-precision.md), group size is often measured in terms of its angular diameter in addition to reporting absolute length. Angles can be measured equivalently either in degree or in radian. If $x$ is the angular measurement in radian, and $\varphi$ the angular measurement in degree for the same angle, then $\frac{x}{2 \pi} = \frac{\varphi}{360}$ such that conversion between degree and radian is given by $x = \frac{2 \pi}{360} \cdot \varphi$ and $\varphi = \frac{360}{2 \pi} \cdot x$.
@@ -20,9 +21,10 @@ The [shotGroups web app](http://shiny.imbei.uni-mainz.de:3838/shotGroups_Angular
 <br clear=all>
 ## Calculating the angular diameter of an object
 
-![Angular diameter of object with absolute size $s$ at distance to target $d$. Right triangle formed by $d$ and object of size $s/2$. $s$ corresponds to angle $\alpha$ (degree) and arc length $x$ (radian).](images/AnglesCenter.jpg)
-{ .figure-caption }
-*Angular diameter of object with absolute size $s$ at distance to target $d$. Right triangle formed by $d$ and object of size $s/2$. $s$ corresponds to angle $\alpha$ (degree) and arc length $x$ (radian).*
+<figure class="figure-right" style="max-width: 417px" markdown="span">
+  ![Angular diameter of object with absolute size $s$ at distance to target $d$. Right triangle formed by $d$ and object of size $s/2$. $s$ corresponds to angle $\alpha$ (degree) and arc length $x$ (radian).](images/AnglesCenter.jpg)
+  <figcaption markdown="span">Angular diameter of object with absolute size $s$ at distance to target $d$. Right triangle formed by $d$ and object of size $s/2$. $s$ corresponds to angle $\alpha$ (degree) and arc length $x$ (radian).</figcaption>
+</figure>
 
 
 The angle $\alpha$ subtended by an object of size $s$ at distance $d$ can be calculated from the right triangle with hypotenuse of length $d$ and cathetus of length $s/2$ as $\tan\left(\frac{\alpha}{2}\right) = \frac{s}{2} \cdot \frac{1}{d}$, therefore $\alpha = 2 \cdot \arctan\left(\frac{s}{2 d}\right)$.
@@ -53,14 +55,16 @@ Similarly, we obtain the following **formulas for distance to target $d$ given a
 ## Less accurate calculation of angular size
 
 
-![Object "sits" on line of sight: right triangle formed by distance to target $d$ and object of size $s$. $s$ corresponds to angle $\alpha'$ (degree) and arc length $x'$ (radian).](images/AnglesSit.jpg)
-{ .figure-caption }
-*Object "sits" on line of sight: right triangle formed by distance to target $d$ and object of size $s$. $s$ corresponds to angle $\alpha'$ (degree) and arc length $x'$ (radian).*
+<figure class="figure-left" style="max-width: 334px" markdown="span">
+  ![Object "sits" on line of sight: right triangle formed by distance to target $d$ and object of size $s$. $s$ corresponds to angle $\alpha'$ (degree) and arc length $x'$ (radian).](images/AnglesSit.jpg)
+  <figcaption markdown="span">Object "sits" on line of sight: right triangle formed by distance to target $d$ and object of size $s$. $s$ corresponds to angle $\alpha'$ (degree) and arc length $x'$ (radian).</figcaption>
+</figure>
 
 
-![Comparison between actual angular diameter $\alpha$ (red) and the approximate angular size $\alpha'$ (blue) as well as between arc lengths $x$ (red) and $x'$ (blue) corresponding to $s$ at distance $d$.](images/AnglesCmp.jpg)
-{ .figure-caption }
-*Comparison between actual angular diameter $\alpha$ (red) and the approximate angular size $\alpha'$ (blue) as well as between arc lengths $x$ (red) and $x'$ (blue) corresponding to $s$ at distance $d$.*
+<figure class="figure-right" style="max-width: 410px" markdown="span">
+  ![Comparison between actual angular diameter $\alpha$ (red) and the approximate angular size $\alpha'$ (blue) as well as between arc lengths $x$ (red) and $x'$ (blue) corresponding to $s$ at distance $d$.](images/AnglesCmp.jpg)
+  <figcaption markdown="span">Comparison between actual angular diameter $\alpha$ (red) and the approximate angular size $\alpha'$ (blue) as well as between arc lengths $x$ (red) and $x'$ (blue) corresponding to $s$ at distance $d$.</figcaption>
+</figure>
 
 
 Sometimes, a slightly different angular size is reported as corresponding to absolute size $s$ at distance $d$: This is the angle $\alpha'$ subtended by the object if it "sits" on the line of sight. $\alpha'$ can be calculated from the right triangle with hypotenuse of length $d$ and cathetus of length $s$, so $\tan(\alpha') = \frac{s}{d}$, therefore $\alpha' = \arctan(\frac{s}{d})$.

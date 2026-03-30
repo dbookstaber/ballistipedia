@@ -251,11 +251,14 @@ def convert_wikitext(title, text, redirects, pages, all_files, all_media):
         alt = re.sub(r'[<>]', '', alt)
 
         if is_thumb or caption:
-            # Use figure with caption
-            result = f'\n![{alt}](images/{safe_fname})'
+            # Use HTML figure with alignment class
+            align_class = f'figure-{align}' if align else 'figure-right'
+            width_style = f' style="max-width: {width}"' if width else ''
+            result = f'\n<figure class="{align_class}"{width_style} markdown="span">\n'
+            result += f'  ![{alt}](images/{safe_fname})\n'
             if caption:
-                result += f'\n{{ .figure-caption }}\n*{caption}*'
-            result += '\n'
+                result += f'  <figcaption markdown="span">{caption}</figcaption>\n'
+            result += '</figure>\n'
             return result
         else:
             return f'![{alt}](images/{safe_fname})'
@@ -652,11 +655,47 @@ document$.subscribe(() => {
 """)
 
     with open(os.path.join(css_dir, 'extra.css'), 'w', encoding='utf-8') as f:
-        f.write(""".figure-caption {
+        f.write("""figure {
+  margin: 0.5em 0 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+figure.figure-right {
+  float: right;
+  margin-left: 1.5em;
+  clear: right;
+}
+
+figure.figure-left {
+  float: left;
+  margin-right: 1.5em;
+  clear: left;
+}
+
+figure.figure-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+figure.figure-none {
+  display: block;
+}
+
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
   text-align: center;
   font-style: italic;
-  font-size: 0.9em;
-  color: #666;
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 0.4em;
 }
 
 img {

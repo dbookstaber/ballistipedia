@@ -9,9 +9,10 @@ Since we are primarily interested in the dispersion relative to the COI, the ove
 The [Normal distribution](http://en.wikipedia.org/wiki/Normal_distribution) is the broadly assumed probability model used for a single random variable and it is characterized by its mean $(\bar{x})$ and standard deviation $(\sigma)$. The [central limit theorem](http://en.wikipedia.org/wiki/Central_limit_theorem) shows that for measures for the "average" shot, or averages of multiple targets are used, then for "large" samples the averages will conform to Normal distribution even if the fundamental distribution is not a normal distribution. 
 
 
-![Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.](images/Bivariate.png)
-{ .figure-caption }
-*Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.*
+<figure class="figure-right" style="max-width: 400px" markdown="span">
+  ![Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.](images/Bivariate.png)
+  <figcaption markdown="span">Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.</figcaption>
+</figure>
 
 
 Since we are interested in shot dispersion on a two-dimensional target we will assume that the horizontal and vertical dispersions of the population of shots are each Normal distributions. Thus the horizontal dispersion will have mean $\mu_H$ and standard deviation $\sigma_H$. The vertical dispersion will have mean $\mu_V$ and standard deviation $\sigma_V$. Then a further assumption is made by assuming that the two dimensional expansion of the Normal distribution the [Bivariate Normal distribution](http://en.wikipedia.org/wiki/Multivariate_normal_distribution#Non-degenerate_case), applies. This adds an additional term the  [correlation parameter *ρ*](http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient). (See also: [What is ρ in the Bivariate Normal distribution?](what-is-rho-in-the-bivariate-normal-distribution.md)) Thus the expectation is that distribution should then describe, the dispersion of a gunshots about the COI, ($\mu_H$ and $\mu_V$). The full bivariate normal distribution is thus:  
@@ -107,9 +108,10 @@ only way linear least squares
 
 ## Case 1, Rayleigh Distribution 
 
-![Shots dispersed about the COI. A circular dispersion is the Rayleigh distribution.](images/raleigh.jpg)
-{ .figure-caption }
-*Shots dispersed about the COI. A circular dispersion is the Rayleigh distribution.*
+<figure class="figure-right" style="max-width: 250px" markdown="span">
+  ![Shots dispersed about the COI. A circular dispersion is the Rayleigh distribution.](images/raleigh.jpg)
+  <figcaption markdown="span">Shots dispersed about the COI. A circular dispersion is the Rayleigh distribution.</figcaption>
+</figure>
 
 Given:   
 
@@ -217,9 +219,10 @@ In this case the horizontal and vertical standard deviations could be determined
 
 ## Case 4, Unequal variances and correlated (Hoyt Distribution) 
 
-![Hoyt Distribution - Shots dispersed about COI in an elliptical pattern which has its major axis at an angle to the coordinate axes.](images/Hoyt.jpg)
-{ .figure-caption }
-*Hoyt Distribution - Shots dispersed about COI in an elliptical pattern which has its major axis at an angle to the coordinate axes.*
+<figure class="figure-right" style="max-width: 250px" markdown="span">
+  ![Hoyt Distribution - Shots dispersed about COI in an elliptical pattern which has its major axis at an angle to the coordinate axes.](images/Hoyt.jpg)
+  <figcaption markdown="span">Hoyt Distribution - Shots dispersed about COI in an elliptical pattern which has its major axis at an angle to the coordinate axes.</figcaption>
+</figure>
 
 
 Given:  

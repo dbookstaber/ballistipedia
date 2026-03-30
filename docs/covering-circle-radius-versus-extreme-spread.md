@@ -1,6 +1,8 @@
 # Covering Circle Radius versus Extreme Spread
 
-![Covering_circle.jpg](images/Covering_circle.jpg)
+<figure class="figure-right" style="max-width: 250px" markdown="span">
+  ![Covering_circle.jpg](images/Covering_circle.jpg)
+</figure>
 
 
 The figure to the right illustrates the difference between the Covering Circle Radius and the Extreme Spread measurements. Given that AB is the extreme spread measure, a back circle which has AB as a *diameter* has been drawn. At points A and B, red circles have been drawn with a *radius* of AB.

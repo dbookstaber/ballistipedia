@@ -1,8 +1,9 @@
 # Range Statistics
 
-![Median values for size statistics when *σ* = 1.  Bands cover 50% of samples around each median.](images/RangeStatistics.png)
-{ .figure-caption }
-*Median values for size statistics when *σ* = 1.  Bands cover 50% of samples around each median.*
+<figure class="figure-right" style="max-width: 455px" markdown="span">
+  ![Median values for size statistics when *σ* = 1.  Bands cover 50% of samples around each median.](images/RangeStatistics.png)
+  <figcaption markdown="span">Median values for size statistics when *σ* = 1.  Bands cover 50% of samples around each median.</figcaption>
+</figure>
 
 The three measures that vary with *n* ([Extreme Spread](describing-precision.md#extreme-spread), [Diagonal](describing-precision.md#diagonal), and [Figure of Merit](describing-precision.md#figure-of-merit)) are range statistics that lack convenient functional forms.  However both the mean and standard deviation of their expected value, as well as quantiles, scale directly with *σ*, so it is sufficient to calculate those statistics once for *σ* = 1 and multiply the resulting values by the desired *σ*.  [Sigma1RangeStatistics.xls](media/Sigma1RangeStatistics.xls) contains quantiles and moments for *n* up to 100.
 
@@ -43,9 +44,10 @@ The required data and formulas for this calculation can be found in [RangeStatis
 
 ## Efficient Estimators
 
-![Relative Efficiency of Extreme Spread estimation by group size.](images/Extreme%20Spread%20Relative%20Efficiency.png)
-{ .figure-caption }
-*Relative Efficiency of Extreme Spread estimation by group size.*
+<figure class="figure-right" style="max-width: 400px" markdown="span">
+  ![Relative Efficiency of Extreme Spread estimation by group size.](images/Extreme%20Spread%20Relative%20Efficiency.png)
+  <figcaption markdown="span">Relative Efficiency of Extreme Spread estimation by group size.</figcaption>
+</figure>
 
 If our goal is to characterize a range statistic using the least number of shots then we should pick our group size carefully.  [Kolbe](prior-art.md#kolbe-2010-group-statistics) et. al. noted that for any desired error and confidence level it looked like 7-shot groups produced a significant estimate using the lowest number of total shots fired.  [Using our more extensive simulations of the coefficient of variation we can see now](media/RangeStatisticEstimation.xls) that **6-shot groups are actually the most efficient**, and that **5-shot groups are practically as efficient** (and for many scenarios identical).
 

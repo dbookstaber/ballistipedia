@@ -31,9 +31,10 @@ You’ve also discovered one of the problems with the Extreme Spread: It depends
 If you kept your sight zeroed and marked every shot taken with a given rifle and lot of ammunition, after 1000 shots[^2] your aggregated target would look something like this: 
 
 
-![1000 shot simulation.  Dots represent the center of each hit, not the size of the holes cut by the bullets.](images/1000Shots.png)
-{ .figure-caption }
-*1000 shot simulation.  Dots represent the center of each hit, not the size of the holes cut by the bullets.*
+<figure class="figure-center" markdown="span">
+  ![1000 shot simulation.  Dots represent the center of each hit, not the size of the holes cut by the bullets.](images/1000Shots.png)
+  <figcaption markdown="span">1000 shot simulation.  Dots represent the center of each hit, not the size of the holes cut by the bullets.</figcaption>
+</figure>
 
 
 It doesn’t matter how accurate or inaccurate your gun: its shot distribution is the same as the one that produced this picture.  The only thing that varies with accuracy is how large or small this cluster is.[^3]

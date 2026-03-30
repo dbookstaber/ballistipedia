@@ -8,9 +8,10 @@
 
 ## What is sigma (*σ*) and what does it mean?
 
-![Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.](images/Bivariate.png)
-{ .figure-caption }
-*Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.*
+<figure class="figure-right" style="max-width: 400px" markdown="span">
+  ![Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.](images/Bivariate.png)
+  <figcaption markdown="span">Distribution of samples from a symmetric bivariate normal distribution.  Axis units are multiples of σ.</figcaption>
+</figure>
 
 *σ* ("sigma") is a single number that characterizes precision.  In statistics *σ* represents [standard deviation](http://en.wikipedia.org/wiki/Standard_deviation), which is a measure of dispersion, and which is a parameter for the [normal distribution](http://en.wikipedia.org/wiki/Normal_distribution).
 
@@ -19,9 +20,10 @@ The [most convenient statistical model](closed-form-precision.md#symmetric-bivar
 Shooting precision is described using [angular units](describing-precision.md#units), so [typical values of *σ*](closed-form-precision.md#typical-values-of) are things like 0.1mil or 0.5MOA.
 
 
-![Rayleigh distribution of shots given *σ*](images/RayleighProcess.png)
-{ .figure-caption }
-*Rayleigh distribution of shots given *σ**
+<figure class="figure-left" style="max-width: 250px" markdown="span">
+  ![Rayleigh distribution of shots given *σ*](images/RayleighProcess.png)
+  <figcaption markdown="span">Rayleigh distribution of shots given *σ*</figcaption>
+</figure>
 
 With respect to shooting precision the meaning of *σ* has an analog to the "[68-95-99.7 rule](http://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule)" for standard deviation: The 39-86-99 rule.  I.e., we expect 39% of shots to fall within 1*σ* of center, 86% within 2*σ*, and 99% within 3*σ*.  Other common values are listed in the following table:
 
@@ -51,9 +53,10 @@ There are two qualifications to the preceding:
 
 ## What is the best number of shots per group?
 
-![Relative Efficiency of Extreme Spread estimation by group size.](images/Extreme%20Spread%20Relative%20Efficiency.png)
-{ .figure-caption }
-*Relative Efficiency of Extreme Spread estimation by group size.*
+<figure class="figure-right" style="max-width: 400px" markdown="span">
+  ![Relative Efficiency of Extreme Spread estimation by group size.](images/Extreme%20Spread%20Relative%20Efficiency.png)
+  <figcaption markdown="span">Relative Efficiency of Extreme Spread estimation by group size.</figcaption>
+</figure>
 
 [Five or six](range-statistics.md#efficient-estimators).
 
@@ -66,9 +69,10 @@ Four-shot groups are only 3% less efficient than five-shot groups, so practicall
 ## How many shots do I need to sight in?
 
 
-![99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.](images/3ShotSighterError.png)
-{ .figure-caption }
-*99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.*
+<figure class="figure-right" style="max-width: 265px" markdown="span">
+  ![99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.](images/3ShotSighterError.png)
+  <figcaption markdown="span">99% shooting errors expected from 3-shot sighting groups, which on average impact .7σ from the Point of Aim.</figcaption>
+</figure>
 
 It is impossible to perfectly align a sight with a gun's center of impact because if there is any dispersion in the gun's point of impact the center can only be estimated.  The problem of sighting in a gun is [the problem of estimating the location of the center of impact](closed-form-precision.md#how-many-sighter-shots-do-you-need).
 

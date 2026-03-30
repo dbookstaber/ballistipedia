@@ -102,9 +102,10 @@ It is possible to take a standard statistic such as the mean and make the measur
 
 # Dispersion Measures about COI
 
-![When shots are dispersed circularly about the true COI, then the distance from each shot to the true COI follows a Rayleigh distribution.](images/raleigh.jpg)
-{ .figure-caption }
-*When shots are dispersed circularly about the true COI, then the distance from each shot to the true COI follows a Rayleigh distribution.*
+<figure class="figure-right" style="max-width: 365px" markdown="span">
+  ![When shots are dispersed circularly about the true COI, then the distance from each shot to the true COI follows a Rayleigh distribution.](images/raleigh.jpg)
+  <figcaption markdown="span">When shots are dispersed circularly about the true COI, then the distance from each shot to the true COI follows a Rayleigh distribution.</figcaption>
+</figure>
 
 
 Different measures have been used to characterize the precision of bullet holes in a sample target. The measures detailed below are  popular. Some are easier to calculate than others, and thus would be suitable for range use. Others require the (*h,v*) positions of each shot and considerable calculations. Such measurements would more amiable to analysis with a calculator or computer. 
@@ -169,9 +170,10 @@ $$
 
 ### Elliptical Error Probable (EEP)
 
-![Hoyt Distribution - If the shots dispersed about the true COI in an elliptical pattern which has its major axis at an angle to the coordinate axes, then the distances from the shots to the true COI follow the Hoyt distribution.](images/Hoyt.jpg)
-{ .figure-caption }
-*Hoyt Distribution - If the shots dispersed about the true COI in an elliptical pattern which has its major axis at an angle to the coordinate axes, then the distances from the shots to the true COI follow the Hoyt distribution.*
+<figure class="figure-right" style="max-width: 250px" markdown="span">
+  ![Hoyt Distribution - If the shots dispersed about the true COI in an elliptical pattern which has its major axis at an angle to the coordinate axes, then the distances from the shots to the true COI follow the Hoyt distribution.](images/Hoyt.jpg)
+  <figcaption markdown="span">Hoyt Distribution - If the shots dispersed about the true COI in an elliptical pattern which has its major axis at an angle to the coordinate axes, then the distances from the shots to the true COI follow the Hoyt distribution.</figcaption>
+</figure>
 
 The EEP(p) is analogous to the Circular Error Probable (CEP), in that covers proportion *p* of the shot group with $0 \leq p \le 1$, the ellipse being centered about the COI. When *p* is not indicated it is assumed to be EEP(0.5). Elliptical Error Probable assumes that the distances from the shots to the true COI follow the Hoyt distribution, so the calculations would be flexible enough to calculate $s_h, s_v,$ and $\rho$.
 
@@ -308,9 +310,10 @@ The RSD measurement is a not a robust estimator since it is fitting an assumed d
 ### String Length (SL) Method
 
 
-![Rice Distribution - The distances of the shots to the true COI follow a Rayleigh distribution, but the distances of the shots to the offset center of the target follow a Rice distribution.](images/Rice.jpg)
-{ .figure-caption }
-*Rice Distribution - The distances of the shots to the true COI follow a Rayleigh distribution, but the distances of the shots to the offset center of the target follow a Rice distribution.*
+<figure class="figure-right" style="max-width: 250px" markdown="span">
+  ![Rice Distribution - The distances of the shots to the true COI follow a Rayleigh distribution, but the distances of the shots to the offset center of the target follow a Rice distribution.](images/Rice.jpg)
+  <figcaption markdown="span">Rice Distribution - The distances of the shots to the true COI follow a Rayleigh distribution, but the distances of the shots to the offset center of the target follow a Rice distribution.</figcaption>
+</figure>
 
 
 This is what could be called an "old-fashion" method for measuring a shooters skill. There are variations of the method as well. 
